@@ -12,7 +12,6 @@ const port = process.env.PORT || 5001;
 const allowedOrigins = [
     "https://regalerecipeapp-frontend.onrender.com",
     "https://regalerecipe.netlify.app/",
-    "http://localhost:5173/"
 ];
 
 app.use(cors({

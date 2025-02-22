@@ -7,4 +7,4 @@ server/.env
 
 # Other files to ignore
 .DS_Store
-dist/
+
