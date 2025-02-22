@@ -1,2 +1,10 @@
-.env
-node modules
+
+# Node modules
+node_modules/
+
+# Environment variables
+server/routes/.env
+
+# Other files to ignore
+.DS_Store
+dist/
