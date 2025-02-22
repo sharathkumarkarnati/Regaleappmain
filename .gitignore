@@ -3,7 +3,7 @@
 server/node_modules
 client/loginpage/node_modules
 # Environment variables
-server/routes/.env
+server/.env
 
 # Other files to ignore
 .DS_Store
