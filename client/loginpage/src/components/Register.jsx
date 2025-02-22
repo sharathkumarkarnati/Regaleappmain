@@ -11,7 +11,7 @@ const Register = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://regalerecipeapp-backend.onrender.com/api/auth/register', { email, password });
+      const response = await axios.post('https://regaleappmain.onrender.com/api/auth/register', { email, password });
       setError('');
       alert('Registration successful, you can now log in!');
     } catch (err) {
