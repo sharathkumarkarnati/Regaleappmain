@@ -110,14 +110,6 @@ export const deleteBookmark = function (id) {
   AJAX(`${API_URL}/api/bookmarks/remove`, { id });
 };
 
-const init = function () {
-  AJAX(`${API_URL}/api/bookmarks`).then((data) => {
-    const { bookmarks } = data;
-    state.bookmarks = bookmarks;
-  });
-};
-init();
-
 export const uploadRecipe = async function (newRecipe) {
   const ingredients = Object.entries(newRecipe)
     .filter((entry) => entry[0].startsWith("ingredient") && entry[1] !== "")
