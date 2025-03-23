@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "nodemon",
+    "start:server": "node index.js",
     "build": "echo \"server: no build specified\" && exit 0"
   },
   "keywords": [],

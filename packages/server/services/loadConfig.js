@@ -7,7 +7,6 @@ export const loadConfig = () => {
     mongoURI: process.env.MONGO_URI,
     jwtSecret: process.env.JWT_SECRET,
     port: process.env.PORT,
-    allowedOrigins: process.env.ALLOWED_ORIGINS,
     recipeApiUrl: process.env.RECIPE_API_URI,
     recipeApiKey: process.env.RECIPE_API_KEY,
   };
@@ -16,9 +15,10 @@ export const loadConfig = () => {
     throw new Error("configs are missing");
   }
 
-  config.allowedOrigins = config.allowedOrigins
+  config.allowedOrigins = (process.env.ALLOWED_ORIGINS || "")
     .split(",")
-    .map((origin) => origin.trim());
+    .map((origin) => origin.trim())
+    .filter((i) => !!i);
 
   return config;
 };
