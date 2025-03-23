@@ -10,8 +10,8 @@ const app = express();
 const port = process.env.PORT || 5001; 
 // **CORS Middleware **
 const allowedOrigins = [
-    "https://regalerecipemain-frontend.onrender.com",
-    "https://regalerecipe.netlify.app/",
+    "https://regalerecipeapp-frontend.onrender.com",
+    "https://regalerecipe.netlify.app",
 ];
 
 app.use(cors({
