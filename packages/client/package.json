@@ -1,0 +1,19 @@
+{
+  "name": "@regale/client",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "start": "vite",
+    "build": "rm -rf ./dist && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "fracty": "1.0.12"
+  },
+  "devDependencies": {
+    "sass-embedded": "^1.86.0",
+    "svgo": "^3.3.2",
+    "vite": "6.2.2"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}

@@ -1,32 +1,27 @@
 {
-  "name": "recipe-app",
+  "name": "regale-recipe",
   "version": "1.0.0",
-  "default": "index.html",
-  "scripts": {
-    "start": "parcel index.html --port 3001",
-    "build": "parcel build index.html --dist-dir ./dist"
-  },
   "keywords": [],
+  "type": "module",
   "author": "Sharath Kumar Karnati",
   "license": "ISC",
-  "description": "Recipe app",
-  "devDependencies": {
-    "@parcel/transformer-sass": "^2.13.3",
-    "parcel": "^2.13.3",
-    "svgo": "^3.3.2"
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "pnpm -r run start",
+    "build": "pnpm -r run build"
   },
-  "dependencies": {
-    "axios": "^1.7.9",
-    "bcryptjs": "^2.4.3",
-    "core-js": "^3.40.0",
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.7",
-    "express": "^4.21.2",
-    "fractional": "^1.0.0",
-    "fracty": "^1.0.12",
-    "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.9.6",
-    "react-router-dom": "^7.1.5",
-    "regenerator-runtime": "^0.14.1"
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "eslint": "^9.22.0",
+    "eslint-config-prettier": "^10.1.1",
+    "globals": "^16.0.0",
+    "pnpm": "10.6.5",
+    "prettier": "^3.5.3"
+  },
+  "packageManager": "pnpm@10.6.5",
+  "engines": {
+    "node": ">22.0.0"
   }
 }

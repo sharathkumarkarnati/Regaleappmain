@@ -1,10 +1,8 @@
-
-# Node modules
-server/node_modules
-client/loginpage/node_modules
-# Environment variables
-server/.env
-
-# Other files to ignore
-.DS_Store
-
+**/node_modules
+**/dist
+**/build
+**/lib
+**/.DS_Store
+**/*/.env*
+!packages/client/dist
+!packages/login/dist
